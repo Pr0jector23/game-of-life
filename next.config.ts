@@ -9,4 +9,4 @@ const nextConfig: NextConfig = { // i added the options
 
 module.exports = nextConfig; // i added this too
 
-export default nextConfig;
+// export default nextConfig;
