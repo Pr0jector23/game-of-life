@@ -1,5 +1,7 @@
 # Conway's Game of Life
 
+## [Live Demo](https://pr0jector23.github.io/game-of-life/)
+
 ## Features
 - Place cells on the grid.
 - Increase / Decrease the grid size.
