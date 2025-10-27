@@ -1,13 +1,14 @@
+'use client'
 import React from "react"
 
 import { FaPlus, FaMinus, FaStepForward, FaStepBackward, FaPause, FaPlay } from "react-icons/fa";
 
 interface ControlsProps {
     isPaused?: boolean
-    onStep?(): any;
-    onPause?(): any;
-    onSizeIncrease?(): any;
-    onSizeDecrease?(): any;
+    onStep?:() => void; //(): any
+    onPause?:() => void;
+    onSizeIncrease?:() => void;
+    onSizeDecrease?:() => void;
 }
 
 const buttonStyle : string = "bg-gray-600 text-3xl text-white flex justify-center items-center w-15 h-15 my-2 mx-5 rounded-xl cursor-pointer hover:bg-gray-500"

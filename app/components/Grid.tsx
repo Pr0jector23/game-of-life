@@ -11,7 +11,7 @@ import Controls from "./Controls";
 const generateGrid = (row : number, col : number) => {
     row += 2
     col += 2
-    let newGrid : string[] = []
+    const newGrid : string[] = [] //let
     for (let i = 0; i < row; i++) {
         for (let j = 0; j < col; j++) {
             if (i == 0 || i == row - 1 || j == 0 || j == col - 1) newGrid.push("#")
@@ -33,7 +33,7 @@ const getAliveNeighbours = (grid : string[], cols : number, index : number) => {
     return count
 }
 
-let defaultCellSize = 650
+const defaultCellSize = 650 //let
 const generateCellSize = (cols: number) => {
     return defaultCellSize / cols
 }
@@ -74,7 +74,7 @@ const Grid = () => {
         if (div.dataset.value != undefined){
             const value : number = Number(div.dataset.value)
             console.log(value);
-            let newGrid = [...grid]
+            const newGrid = [...grid] //let
             if (grid[value] == "O") {
                 newGrid[value] = "X"
                 //newGrid[value - cols - 2] = "X"
@@ -91,7 +91,7 @@ const Grid = () => {
     
     const step = () => {
         console.log("doing a step")
-        let newGrid = [...grid]
+        const newGrid = [...grid] //let
         for (let i = 0; i < newGrid.length; i++) {
             const neighbours = (getAliveNeighbours(grid, cols, i))
             if (grid[i] == "O") {
